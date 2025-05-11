@@ -1,0 +1,6 @@
+YOLO
+ultralytics
+streamlit
+numpy
+pandas
+opencv-python-headless
