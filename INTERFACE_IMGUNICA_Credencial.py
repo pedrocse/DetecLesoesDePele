@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import json
 
+try:
+    import torch
+except Exception:
+    pass
 # ================== LOGIN E CONTROLE DE SESSÃO ==================
 
 # Função para carregar credenciais
