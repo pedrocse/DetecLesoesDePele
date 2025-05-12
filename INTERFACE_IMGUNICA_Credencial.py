@@ -82,11 +82,12 @@ else:
     # 4. Tab de upload e predição
     with tab1:
         st.subheader("Classes e Descrição")
+        st.image("Classes.PNG", use_container_width=True)
         st.markdown(
             "<p style='font-size:24px; font-weight:bold;'>Upload de Imagens.</p>",
             unsafe_allow_html=True
         )
-        st.image("Classes.PNG", use_container_width=True)
+        
 
         uploaded_files = st.file_uploader("Escolha uma ou mais imagens", type=["jpeg", "jpg", "png"], accept_multiple_files=True)
 
