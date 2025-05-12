@@ -67,6 +67,7 @@ else:
         "<p style='font-size:18px; font-weight:bold;'>Orientadores: Pedro Euphrásio, Felipe Pacheco.</p>",
         unsafe_allow_html=True
     )
+    st.image("Classes.PNG", use_container_width=True)
 
     # 2. Carregar modelo YOLO
     @st.cache_resource
