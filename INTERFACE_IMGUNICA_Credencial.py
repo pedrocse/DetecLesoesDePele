@@ -58,7 +58,7 @@ else:
         "<h2 style='text-align: center;'>Predições de Lesões de Pele</h2>",
         unsafe_allow_html=True
     )
-    st.image("Classes.PNG", use_container_width=True)
+    
     st.markdown(
         "<p style='font-size:18px; font-weight:bold;'>Autores: Gabriel Barcellos, Felipe Segreto, Mariana Ferreira.</p>",
         unsafe_allow_html=True
@@ -86,6 +86,7 @@ else:
             "<p style='font-size:24px; font-weight:bold;'>Upload de Imagens.</p>",
             unsafe_allow_html=True
         )
+        st.image("Classes.PNG", use_container_width=True)
 
         uploaded_files = st.file_uploader("Escolha uma ou mais imagens", type=["jpeg", "jpg", "png"], accept_multiple_files=True)
 
