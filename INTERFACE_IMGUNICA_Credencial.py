@@ -58,7 +58,7 @@ else:
         "<h2 style='text-align: center;'>Predições de Lesões de Pele</h2>",
         unsafe_allow_html=True
     )
-
+    st.image("Classes.PNG", use_container_width=True)
     st.markdown(
         "<p style='font-size:18px; font-weight:bold;'>Autores: Gabriel Barcellos, Felipe Segreto, Mariana Ferreira.</p>",
         unsafe_allow_html=True
@@ -67,8 +67,7 @@ else:
         "<p style='font-size:18px; font-weight:bold;'>Orientadores: Pedro Euphrásio, Felipe Pacheco.</p>",
         unsafe_allow_html=True
     )
-    st.image("Classes.PNG", use_container_width=True)
-
+    
     # 2. Carregar modelo YOLO
     @st.cache_resource
     def load_model(path: str):
