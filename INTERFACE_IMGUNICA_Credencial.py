@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import json
 
+#https://deteclesoesdepele-wb8xvxn797udu2fzkjith9.streamlit.app/
+
 try:
     import torch
 except Exception:
@@ -58,7 +60,7 @@ else:
         "<h2 style='text-align: center;'>Predições de Lesões de Pele</h2>",
         unsafe_allow_html=True
     )
-    
+
     st.markdown(
         "<p style='font-size:18px; font-weight:bold;'>Autores: Gabriel Barcellos, Felipe Segreto, Mariana Ferreira.</p>",
         unsafe_allow_html=True
@@ -67,7 +69,8 @@ else:
         "<p style='font-size:18px; font-weight:bold;'>Orientadores: Pedro Euphrásio, Felipe Pacheco.</p>",
         unsafe_allow_html=True
     )
-    
+    st.image("Classes.PNG", use_container_width=True)
+
     # 2. Carregar modelo YOLO
     @st.cache_resource
     def load_model(path: str):
@@ -82,12 +85,10 @@ else:
     # 4. Tab de upload e predição
     with tab1:
         st.subheader("Classes e Descrição")
-        st.image("Classes.PNG", use_container_width=True)
         st.markdown(
             "<p style='font-size:24px; font-weight:bold;'>Upload de Imagens.</p>",
             unsafe_allow_html=True
         )
-        
 
         uploaded_files = st.file_uploader("Escolha uma ou mais imagens", type=["jpeg", "jpg", "png"], accept_multiple_files=True)
 
