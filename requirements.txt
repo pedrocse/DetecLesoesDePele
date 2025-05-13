@@ -3,4 +3,4 @@ ultralytics
 streamlit
 numpy
 pandas
-opencv-python-headless
+opencv-python-headless>=4.5.0 
