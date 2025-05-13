@@ -1,6 +1,18 @@
-YOLO
-ultralytics
-streamlit
-numpy
-pandas
-opencv-python-headless>=4.5.0 
+# Streamlit
+streamlit>=1.25.0
+
+# Ultralytics (YOLOv8)
+ultralytics>=8.0.0
+
+# OpenCV (necessário para ultralytics)
+opencv-python-headless>=4.5.0  # versão recomendada para cloud
+
+# PyTorch (já vem com ultralytics, mas garantimos a instalação)
+torch>=1.13.0
+
+# Suporte adicional (opcional, útil para processamento de imagens)
+numpy>=1.23.0
+pillow>=9.0.0
+
+# (Opcional) Se você usar páginas ou componentes extras do Streamlit
+streamlit-extras>=0.1.0
