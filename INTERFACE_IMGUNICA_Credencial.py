@@ -25,8 +25,11 @@ st.write("Orientadores: Pedro Euphrásio, Felipe Pacheco\n")
 @st.cache_resource
 def load_model(path: str):
     return YOLO(path)
+import os
+
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "YOLOv08n.pt")
 model = load_model(MODEL_PATH)
+
 
 # Função auxiliar para converter resultados para DataFrame
 def results_to_df(results, image_name):
