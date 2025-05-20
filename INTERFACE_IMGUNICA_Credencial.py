@@ -25,8 +25,8 @@ st.write("Orientadores: Pedro Euphrásio, Felipe Pacheco\n")
 @st.cache_resource
 def load_model(path: str):
     return YOLO(path)
-
-MODEL_PATH = r"C:\Users\pedro\PycharmProjects\ProjetoMelanoma\YOLOv08n.pt"
+MODEL_PATH = "YOLOv08n.pt"
+#MODEL_PATH = r"C:\Users\pedro\PycharmProjects\ProjetoMelanoma\YOLOv08n.pt"
 model = load_model(MODEL_PATH)
 
 # Função auxiliar para converter resultados para DataFrame
