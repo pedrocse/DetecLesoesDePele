@@ -17,17 +17,10 @@
 # (Opcional) Se você usar páginas ou componentes extras do Streamlit
 # streamlit-extras>=0.1.0
 
-streamlit
-Pillow
-opencv-python
+YOLO
 ultralytics
-pandas
-matplotlib
+streamlit
 numpy
-
-#YOLO
-#ultralytics
-#streamlit
-#numpy
-#pandas
-#opencv-python-headless
+pandas
+opencv-python-headless
+Pillow
