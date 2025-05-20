@@ -1,8 +1,8 @@
 # Streamlit
 # streamlit>=1.25.0
-
+YOLO
 # Ultralytics (YOLOv8)
-# ultralytics>=8.0.0
+ ultralytics>=8.0.0
 
 # OpenCV (necessário para ultralytics)
 # opencv-python-headless>=4.5.0  # versão recomendada para cloud
@@ -17,8 +17,8 @@
 # (Opcional) Se você usar páginas ou componentes extras do Streamlit
 # streamlit-extras>=0.1.0
 
-YOLO
-ultralytics
+
+#ultralytics
 streamlit
 numpy
 pandas
