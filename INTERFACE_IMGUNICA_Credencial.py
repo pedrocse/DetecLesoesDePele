@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-#
+
 
 # 1. Título
 st.set_page_config(page_title="Predições de Lesões de Pele")
